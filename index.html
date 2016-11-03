@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Web Components</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Web Components</h1>
+					<p>Descubra o conceito da nova Web</p>
+				</section>
+
+				<section>
+					<h2>Diego Melo</h2>
+					<p>
+						Full Stack Developer - Universidade Tiradentes
+					</p>
+					<a href="https://github.com/diegomelo182">github.com/diegomelo182</a>
+				</section>
+
+				<section>
+					<h2>O que é?</h2>
+					<p>
+						O conceito de Web Components é bem simples, basta imaginar que tenhamos reaproveitar um conjunto de camadas como Controller e View em algum momento na nossa aplicação e ao invés de duplicarmos as mesmas, as agrupamos em um Compent para possamos reutilizá-lo quando quisermos.
+					</p>
+				</section>
+
+				<section>
+					<h2>Como são compostos?</h2>
+					<p>
+						Eles são compostos por 5 especificações, sendo elas:
+					</p>
+					<ul class="fragment">
+						<li>Templates</li>
+						<li>Decorators</li>
+						<li>Custom Components</li>
+						<li>Shadow DOM</li>
+						<li>Imports</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Templates</h2>
+					<p>
+						definem pedaços de código que são totalmente inertes à página até que seu Javascript os ative.
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
