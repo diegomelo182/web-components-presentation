@@ -40,18 +40,17 @@
 				<section>
 					<h2>O que é?</h2>
 					<p>
-						O conceito de Web Components é bem simples, basta imaginar que tenhamos reaproveitar um conjunto de camadas como Controller e View em algum momento na nossa aplicação e ao invés de duplicarmos as mesmas, as agrupamos em um Compent para possamos reutilizá-lo quando quisermos.
+						O conceito de Web Components é bem simples, basta imaginar que tenhamos que reaproveitar um conjunto de camadas como Controller e View em algum momento na nossa aplicação e ao invés de duplicarmos as mesmas, as agrupamos em um Component para possamos reutilizá-lo quando quisermos.
 					</p>
 				</section>
 
 				<section>
 					<h2>Como são compostos?</h2>
 					<p>
-						Eles são compostos por 5 especificações, sendo elas:
+						Eles são compostos por 4 especificações, sendo elas:
 					</p>
 					<ul class="fragment">
 						<li>Templates</li>
-						<li>Decorators</li>
 						<li>Custom Components</li>
 						<li>Shadow DOM</li>
 						<li>Imports</li>
@@ -61,9 +60,104 @@
 				<section>
 					<h2>Templates</h2>
 					<p>
-						definem pedaços de código que são totalmente inertes à página até que seu Javascript os ative.
+						Definem pedaços de código(HTML) que são totalmente inertes à página até que seu Javascript os ative, ou seja, o template não existirá na página até que você necessite.
 					</p>
 				</section>
+
+				<section>
+<pre style="width: 100%;"><code class="xml"><div class="uma-classe">
+	<h1>Um título</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+</div></code></pre>
+				</section>
+
+				<section>
+					<h2>Custom Elements</h2>
+					<p>
+						São elementos customizados, onde permite-nos criar tags diferentes dos canônicos como "body", "input" ou "div" e injetar os templates dentro das mesmas.
+					</p>
+				</section>
+
+				<section>
+<pre style="width: 100%;"><code class="xml"><top-menu name="Menu principal">
+	// código do menu
+</top-menu></code></pre>
+				</section>
+
+				<section>
+					<h2>Shadow DOM</h2>
+					<p>
+						É onde uma parte do código do seu elemento é encapsulada e escondida pelo browser, ou seja, não é visível no código normal do DOM, mas que monta todo seu componente “por baixo dos panos”.
+					</p>
+				</section>
+
+				<section>
+					<h2>Imports</h2>
+					<p>
+						Uma vez tendo um trecho de DOM isolado, com estilos e comportamentos independentes de outros componentes, agora precisamos empacotar isso. E para isso servem esses imports que declara os arquivos e dependências do componente para que eles possam ser lidos posteriormente.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Exemplo de componente</h2>
+					<img src="imgs/login-template.jpg" alt="Login">
+<pre><code class="xml"><login-form></login-form></code></pre>
+				</section>
+
+				<section data-background="imgs/work.gif">
+					<h1 style="text-shadow: 1px 5px #000000;">Como se trabalhava antes?</h1>
+				</section>
+
+				<section>
+					<img src="imgs/html.jpg" alt="HTML">
+				</section>
+
+				<section>
+					<h2>Como se trabalha hoje com Web Components</h2>
+				</section>
+
+				<section>
+					<img src="imgs/webcomponents-example.png" alt="Html">
+				</section>
+
+				<section data-background="imgs/notbad.gif">
+					<h1 style="text-shadow: 1px 5px #000000;">Nada mal hein?</h1>
+				</section>
+
+				<section data-background="imgs/question.gif">
+					<h1 style="text-shadow: 1px 5px #000000;">Quero usar, mas por onde começo?</h1>
+				</section>
+
+				<section>
+					<h2>Webcomponents.org</h2>
+					<img src="imgs/webcomponents-org.png" alt="Webcomponents">
+				</section>
+
+				<section>
+					<h2>Polymer</h2>
+					<img src="imgs/polymer.png" alt="Polymer">
+				</section>
+
+				<section>
+					<h2>SkateJS</h2>
+					<img src="imgs/skatejs.png" alt="SkateJS">
+				</section>
+
+				<section>
+					<h2>Bosonic</h2>
+					<img src="imgs/bosonic.png" alt="Bosonic">
+				</section>
+				
+				<section>
+					<h2>X-tag</h2>
+					<img src="imgs/xtag.png" alt="X-tag">
+				</section>
+				
+				<section>
+					<h2>AngularJS / Angular 2</h2>
+					<img src="imgs/angular.png" alt="Angular">
+				</section>
+				
 			</div>
 		</div>
 
